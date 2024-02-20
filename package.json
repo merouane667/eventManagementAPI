@@ -4,8 +4,7 @@
   "description": "RESTful API for managing events, allowing users to create events (wedding, birthday party or baby shower), invite attendees, and manage RSVPs.",
   "main": "app.js",
   "scripts": {
-    "start": "node src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js"
   },
   "repository": {
     "type": "git",
