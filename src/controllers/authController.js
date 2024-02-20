@@ -6,13 +6,18 @@ const axios = require('axios');
 
 
 exports.signup = async (req, res) => {
-    const userResponse = await admin.auth().createUser({
-        email: req.body.email,
-        password: req.body.password,
-        emailVerified: false,
-        disabled: false
-    });
-    res.json(userResponse);
+    try {
+        const userResponse = await admin.auth().createUser({
+            email: req.body.email,
+            password: req.body.password,
+            emailVerified: false,
+            disabled: false
+        });
+        res.json(userResponse);
+    } catch (error) {
+        console.error('Error creating user:', error);
+        res.status(500).json({ error: 'Error creating user' });
+    }
 };
 
 exports.login = async (req, res) => {
