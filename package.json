@@ -1,0 +1,28 @@
+{
+  "name": "event_management_api",
+  "version": "1.0.0",
+  "description": "RESTful API for managing events, allowing users to create events (wedding, birthday party or baby shower), invite attendees, and manage RSVPs.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merouane667/eventManagementAPI.git"
+  },
+  "author": "merouanehany@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/merouane667/eventManagementAPI/issues"
+  },
+  "homepage": "https://github.com/merouane667/eventManagementAPI#readme",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-session": "^1.18.0",
+    "firebase-admin": "^12.0.0",
+    "mongoose": "^8.1.3"
+  }
+}
